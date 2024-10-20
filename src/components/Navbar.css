@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9edc9;
+    padding: 0;
+    height: 100px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 80px;
+    background-color: transparent;
+}
+
+.nav-li {
+    font-size: 20px;
+    font-weight: 800;
+    color: #7a7d7d;
+    background-color: transparent;
+}
+
+.nav-li:hover {
+    cursor: pointer;
+    visibility: visible;
+}
+
+img {
+    height: 70px;
+    background-color: transparent;
+    padding: 10px;
+}
+
+
+

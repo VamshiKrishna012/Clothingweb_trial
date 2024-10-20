@@ -1,0 +1,389 @@
+html,
+body {
+  font-family: "Amazon Ember";
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(66, 66, 66, 0.2);
+    border: 0px;
+    background-clip: padding-box;
+    border-radius: 5px;
+  }
+
+  /* Nav */
+
+/* .logo {
+    width: 40%;
+    margin-left: 20%;
+  }
+  
+  nav {
+    background-color: #e9edc9;
+    padding: 5px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+  }
+
+  Link {
+    margin: 0;
+    list-style: none;
+  } */
+
+  /* Navbar container */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo styling */
+  .nav img {
+    width: 200px;
+    height: auto;
+    padding: 0;
+  }
+  
+  /* Navbar menu */
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #e9edc9;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Navbar links */
+  .nav-li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-li:hover {
+    color: #000; /* Change color on hover */
+    cursor: pointer;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav {
+      flex-direction: row;
+    }
+  
+    .nav img {
+      margin-bottom: 10px;
+    }
+  
+    .nav-menu.col-md-6, .nav-menu.col-md-3 {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Home.css */
+.latest-collection {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 200px;
+    border: 2px solid #000;
+}
+
+.home-container {
+    width: 50%;
+}
+
+.latest-left {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+} 
+
+h1 span {
+    color: #aaae7f;
+}
+
+.latest-left p a {
+  text-decoration: none;
+  color: #000;
+}
+
+p span {
+    content: url('../assets/shopnow.png');
+    height: 10px;
+    width: 30px;
+}
+
+.latest-left p:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.05);
+    font-weight: 400;
+}
+
+.carousel img {
+    height: 400px; /* Adjust the height to match your layout */
+    object-fit: contain;/* Ensure the image covers the entire carousel area */
+    background-color: rgb(0 , 0, 0, 0);
+}
+
+/* Home.css */
+
+/* Remove background and change the color of Previous button icon */
+.carousel-control-prev {
+    background-color: transparent; /* Remove background color */
+  }
+  
+  .carousel-control-prev-icon {
+    background-image: none; /* Remove the default background icon */
+    border: none; /* Ensure no border */
+    border-radius: 50%;
+    content: url('../assets/prev.png'); /* Custom black icon */
+    filter: invert(0%); /* Ensures the icon is black (if you use a default arrow icon) */
+  }
+  
+  /* Remove background and change the color of Next button icon */
+  .carousel-control-next {
+    background-color: transparent; /* Remove background color */
+  }
+  
+  .carousel-control-next-icon {
+    background-image: none; /* Remove the default background icon */
+    border: none; /* Ensure no border */
+    border-radius: 50%;
+    content: url('../assets/next.png'); /* Custom black icon */
+    filter: invert(0%); /* Ensures the icon is black (if you use a default arrow icon) */
+  }
+  
+
+  /* Best Sellers */
+
+  .bestsellers {
+    padding: 100px 60px;
+  }
+
+  .bestsellers h1 {
+    text-align: center;
+  }
+
+  .bs-collections {
+    display: flex;
+    flex-wrap: wrap; /* Ensures that cards will wrap to the next line */
+    justify-content: space-around; /* Evenly spaces out the cards */
+    gap: 10px; /* Space between each card */
+    row-gap: 10px;
+  }
+
+  /* ProductCard.css */
+.product-card {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 350px;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  .product-image {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart {
+    padding: 10px 15px;
+    background-color: #d1d7a0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .latest-collection-slide {
+    text-align: center;
+    padding: 50px 60px;
+  }
+  
+  /* COLLECTION */
+  .collection {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 40px 100px;
+  }
+
+  .filters-section {
+    width: 15vw;
+    justify-content: center;
+  }
+
+  .filter-category, .filter-type {
+    margin: 20px 0;
+  }
+
+  .filter-block {
+    display: block;
+    border: #ccc 1px solid;
+    height: 150px;
+    padding: 25px;
+  }
+
+  .collection-section {
+    width: 85vw;
+  }
+
+  .collection-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .select-collection {
+    padding: 10px;
+  }
+
+  .all-collections {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 40px 20px;
+  }
+
+  .collection-card {
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .collection-card img {
+    height: 250px;
+    width: auto;
+  }
+
+  .collection-card img:hover {
+    transform: scale(1.05);
+  }
+
+  /* ABOUT */
+.about-title {
+  text-align: center;
+}
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    padding: 40px 200px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .about-content-left {
+    width: 50vw;
+  }
+
+  .about-content-left img {
+    width: 30vw;
+    height: auto;
+  }
+
+  .choose-span {
+    color: #aaae7f;
+  }
+
+  .about-content-right {
+    align-content: center;
+  }
+
+  .about-choose-contents {
+    display: inline-flex;
+  }
+
+  .about-choose-content {
+    display: block;
+    border: 1px solid #cccccc8b;
+    padding: 50px;
+  }
+
+  /* CONTACT US */
+  .contact-title {
+    text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    border: #e9edc9 1px solid;
+  }
+
+  .contact-out {
+    padding: 40px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .contact-left {
+    width: 50vw;
+  }
+
+  .contact-right {
+    width: 50vw;
+    align-content: center;
+    padding-left: 40px;
+    background-color: #cccccc4e;
+  }
+
+  .contact-left img {
+    width: 30vw;
+    height: auto;
+  }
+

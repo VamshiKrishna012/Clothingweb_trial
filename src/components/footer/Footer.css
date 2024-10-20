@@ -1,0 +1,48 @@
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d0d6b3;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+.footer-logo {
+    height: 90px;
+    width: auto;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.org-about {
+    padding: 40px 20px 40px 60px;
+}
+
+ul {
+    background-color: #d0d6b3;
+    padding: 50px;
+}
+
+li a, li {
+    list-style: none;
+    text-align: center;
+    background-color: #d0d6b3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li h2 {
+    background-color: #d0d6b3;
+}
+
+.copyright {
+    padding: 0 50px;
+    text-align: center;
+}
